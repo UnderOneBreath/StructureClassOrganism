@@ -1,14 +1,16 @@
-public class Organism {
-    public String name;
-    public int age;
+abstract class Organism {
+    protected String name;
+    protected float age;
 
-    public Organism(String name, int age) {
+    public Organism(String name, float age) {
         this.name = name;
         this.age = age;
     }
 
-    public void display() {
-        System.out.println("Name: " + name);
-        System.out.println("Age: " + age);
+    abstract void action();
+
+    public void displayInfo() {
+        System.out.println("Имя: " + name);
+        System.out.println("Возсраст: " + age);
     }
 }

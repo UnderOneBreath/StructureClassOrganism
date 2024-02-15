@@ -1,10 +1,17 @@
-public class Plant extends Organism{
-    public String type;
+class Plant extends Organism {
+    private String species;
 
-    public Plant(String name, int age, String type) {
+    public Plant(String name, float age, String species) {
         super(name, age);
-        this.type = type;
+        this.species = species;
     }
 
-//    Need added action
+
+    void action() {
+        System.out.println(name + " фотоцинтезирует");
+    }
+
+    public void bloom() {
+        System.out.println(name + " расцветает");
+    }
 }

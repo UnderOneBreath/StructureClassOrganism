@@ -1,8 +1,16 @@
 public class Client {
     public static void main(String[] args) {
-        // HERE Creat object organism
-        // Example Animal tigr = new Animal("Tigr", 5, "Lion");
+        Animal lion = new Animal("Кот", 2, "кошачьих");
+        Plant tree = new Plant("Ньургуhун", 0.2F, "Цветы");
 
-        //HERE object action Example moving or sound
+        lion.displayInfo();
+        lion.action();
+        lion.makeSound();
+
+        System.out.println();
+
+        tree.displayInfo();
+        tree.action();
+        tree.bloom();
     }
 }
